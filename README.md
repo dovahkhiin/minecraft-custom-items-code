@@ -2,8 +2,9 @@
 java code using eclipse mars for creating minecraft custom items
 
 - **For further instructions use:** http://minecraft.gamepedia.com/Mods/Creating_mods
+- **Package and superclass names and creation sequence is the following:** ![79](https://cloud.githubusercontent.com/assets/22712175/22217483/e09d4fd0-e1ab-11e6-8862-1b6fb9ce10dd.png)
 
-- **modid creation code:**
+- **modid creation code:** Used for creating your mods name.To insert into game use /get modid:"name of your mod" through minecrafts's command line.
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
 public class tutorial {
@@ -45,7 +46,7 @@ public class tutorial {
 }
 
 
-- ** reference class code:** 
+- ** reference class code:** contains all your custom items and gives them a name to insert them into game.Use /get item"your items name".
 
 public class Reference {
 
@@ -139,7 +140,7 @@ public class ModBlocks {
 	}
 }
 
-- **item creation code:**
+- **item registeration code:**
 
 public class ModItems {
 	
